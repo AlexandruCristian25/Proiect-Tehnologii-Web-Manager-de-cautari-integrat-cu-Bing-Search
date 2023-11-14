@@ -9,7 +9,10 @@ Proiectul va fi conceput in React accesand comanda 'npx create-react-app', iar p
 3. Instalarea MariaDB de aici https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.3.0&os=windows&cpu=x86_64&pkg=msi&m=chroot-network
 4. Instalarea Sequelize ORM de aici https://sequelize.org/
 
-!!! Important: Portul pe care serverul de nodeJS(backend-ul) este configurat este 3000 iar partea de frontend va fi configurata pe portul 8080.
+!!! Important: 
+1. Portul pe care serverul de nodeJS(backend-ul) este configurat este 3000 iar partea de frontend va fi configurata pe portul 8080.
+2. Pentru instalea pachetelor aferente aplicatiei se va utiliza comanda 'nmp install'.
+3. Pentru accesarea aplicatiei comanda utilizata va fi 'npm start'.
 
 # Specificatii proiect
 
