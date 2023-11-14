@@ -11,8 +11,9 @@ Proiectul va fi conceput in React accesand comanda 'npx create-react-app', iar p
 
 !!! Important: 
 1. Portul pe care serverul de nodeJS(backend-ul) este configurat este 3000 iar partea de frontend va fi configurata pe portul 8080.
-2. Pentru instalea pachetelor aferente aplicatiei se va utiliza comanda 'npm install'.
-3. Pentru accesarea aplicatiei comanda utilizata va fi 'npm start'.
+2. Se executa comanda git clone github.com:AlexandruCristian25/roiect-Tehnologii-Web-Manager-de-cautari-integrat-cu-Bing-Search/tweb-app.
+3. Pentru instalea pachetelor aferente aplicatiei se va utiliza comanda 'npm install'.
+4. Atat frontend-ul (localhost:8080 in browser) cat si backend-ul (localhost:3000) trebuie sa fie pornite prin comanda 'npm start'.
 
 # Specificatii proiect
 
