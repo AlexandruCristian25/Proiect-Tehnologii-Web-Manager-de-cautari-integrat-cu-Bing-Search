@@ -17,10 +17,9 @@ Proiectul va fi conceput in React accesand comanda 'npx create-react-app', iar p
 # Specificatii proiect
 
 Proiectul va fi impartit in doua parti; partea de Frontend va contine designul aplicatiei iar partea de backend va contine serverul unde va fi disponibila si baza de date.
-Pentru aceasta aplicatie primul pas va fi crearea unei baze de date iar in ajutor ne va veni MariaDB si Sequelize ORM. 
-Pe partea de server cele doua aplicatii vor fi principalii creatori ai bazei de date iar Postman va fi o verificare in plus pentru a vedea functionalitate bazei de date in lipsa unei interfete.
-Pasul urmator va fi crearea unui motor de cautare care va contine un formular prin care utilizatorii cand vor accesa a doua oara cuvintele cheie vor fi disponibile la accesarea lor. Crearea formularului va fi utila pentru introducerea datelor in trimiterea informatiilor catre server. Formularul va avea si o lista care va contine toate cuvintele cheie ce au fost trimise de fiecare utilizator in parte si va aparea ori de cate ori formularul va fi accesat.
-Obiectele pe care formularul le va contine sunt urmatoarele:
+1. Pentru aceasta aplicatie primul pas va fi crearea unei baze de date iar in ajutor ne va veni MariaDB si Sequelize ORM. Pe partea de server cele doua aplicatii vor fi principalii creatori ai bazei de date iar Postman va fi o verificare in plus pentru a vedea functionalitate bazei de date in lipsa unei interfete.
+2. Pasul urmator va fi crearea unui motor de cautare care va contine un formular prin care utilizatorii cand vor accesa a doua oara cuvintele cheie vor fi disponibile la accesarea lor. Crearea formularului va fi utila pentru introducerea datelor in trimiterea informatiilor catre server. Formularul va avea si o lista care va contine toate cuvintele cheie ce au fost trimise de fiecare utilizator in parte si va aparea ori de cate ori formularul va fi accesat.
+3. Obiectele pe care formularul le va contine sunt urmatoarele:
 - un logo pentru a-i atrage atentia utilizatorului si de a-l face sa-l foloseasca ca si motor de cautare principal;
 - o casuta de cautare in care se va adauga un placeholder pentr a-l ajuta pe utilizator ce va avea de facut;
 - un buton care va avea rolul de trimitere a informatiilor introduse pentru fi regasite in baza de date cand vor fi aceesate de mai mute ori;
