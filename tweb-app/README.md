@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Manager de cautari integrat cu Bing Search
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Proiectul va fi conceput in React accesand comanda 'npx create-react-app', iar pentru Baza de date am folosit MariaDB dar si Sequelize ORM. Postman va avea rolul de testare pentru functionarea bazei de date cand interfata nu va fi creata interfata.
 
-## Available Scripts
+# Cerinte de sistem proiect
 
-In the project directory, you can run:
+1. Instalarea NodeJS de aici https://nodejs.org/dist/v16.13.1/node-v16.13.1-x64.msi
+2. Instalarea POSTMAN de aici https://www.postman.com/downloads/
+3. Instalarea MariaDB de aici https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.3.0&os=windows&cpu=x86_64&pkg=msi&m=chroot-network
+4. Instalarea Sequelize ORM de aici https://sequelize.org/
 
-### `npm start`
+!!! Important: Portul pe care serverul de nodeJS(backend-ul) este configurat este 3000 iar partea de frontend va fi configurata pe portul 8080.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Specificatii proiect
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proiectul va fi impartit in doua parti; partea de Frontend va contine designul aplicatiei iar partea de backend va contine serverul unde va fi disponibila si baza de date.
+Pentru aceasta aplicatie primul pas va fi crearea unei baze de date iar in ajutor ne va veni MariaDB si Sequelize ORM. 
+Pe partea de server cele doua aplicatii vor fi principalii creatori ai bazei de date iar Postman va fi o verificare in plus pentru a vedea functionalitate bazei de date in lipsa unei interfete.
+Pasul urmator va fi crearea unui motor de cautare care va contine un formular prin care utilizatorii cand vor accesa a doua oara cuvintele cheie vor fi disponibile la accesarea lor. Crearea formularului va fi utila pentru introducerea datelor in trimiterea informatiilor catre server. Formularul va avea si o lista care va contine toate cuvintele cheie ce au fost trimise de fiecare utilizator in parte si va aparea ori de cate ori formularul va fi accesat.
+Obiectele pe care formularul le va contine sunt urmatoarele:
+- un logo pentrua-i atrage atentia utilizatorului si de a-l face sa-l foloseasca ca si motor de cautare principal;
+- o casuta de cautare in care se va adauga un placeholder pentr a-l ajuta pe utilizator ce va avea de facut;
+- un buton care va avea rolul de trimitere a informatiilor introduse pentru fi regasite in baza de date cand vor fi aceesate de mai mute ori;
+- un buton de resetare care va avea rolul de resetare a formularului dupa cum putem observa din denumirea lui;
