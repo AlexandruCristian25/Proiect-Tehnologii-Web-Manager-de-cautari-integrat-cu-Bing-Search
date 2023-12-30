@@ -177,7 +177,7 @@ async function UpdateSearchResult(searchResultID, body) {
     {
 
         exit_msg[0] = 400;
-        exit_msg[1] = "Introduceti numele, linkul sau categoria cuvantului-rezultat !"
+        exit_msg[1] = "Introduceti numele, linkul sau categoria cuvantului-rezultat!"
         return exit_msg;
 
     } else {
@@ -288,7 +288,7 @@ async function DeleteSearchResult(searchResult_id) {
     if (isNaN(searchResult_id)) {
 
         exit_msg[0] = 400;
-        exit_msg[1] = "ID-ul nu este valid !";
+        exit_msg[1] = "ID-ul nu este valid!";
     }
     else {
 
@@ -311,7 +311,7 @@ async function DeleteSearchResult(searchResult_id) {
             {
 
                 exit_msg[0] = 400;
-                exit_msg[1] = "Nu exista inregistrarea in baza de date";
+                exit_msg[1] = "Nu exista inregistrarea in baza de date!";
 
             }
         });
@@ -343,7 +343,7 @@ async function DeleteSearchResult(searchResult_id) {
                     }
 
                     exit_msg[0] = 200
-                    exit_msg[1] = "Rezultatul a fost stears din baza de date";
+                    exit_msg[1] = "Rezultatul a fost stears din baza de date!";
 
                 } 
 
