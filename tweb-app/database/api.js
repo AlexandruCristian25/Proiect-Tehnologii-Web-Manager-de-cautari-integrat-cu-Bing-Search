@@ -18,7 +18,7 @@ router.route("/search/:key").get(async function FindResultByKeyword({ params: { 
 
 
 
-/*Adaugare Rezultat cautare*/
+/*Adaugare rezultat cautare*/
 router.route("/new_search_result").post(async function AddNewResult({ body }, response) {
 
     console.log (body)
