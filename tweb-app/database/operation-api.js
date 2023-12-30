@@ -21,7 +21,7 @@ async function SequelizeSync(sequelizeConection) {
         console.log("S-a realizat sincronizarea cu baza de date!");
     }
     catch (err) {
-        console.log("A intervenit o eroare la sincronizarea cu bazei de date!");
+        console.log("A intervenit o eroare la sincronizarea cu baza de date!");
     }
 }
 
@@ -101,7 +101,7 @@ async function AddNewResult(body) {
      {
 
             exit_msg[0] = 400;
-            exit_msg[1] = "Introduceti numele, linkul sau categoria cuvantului-rezultat !"
+            exit_msg[1] = "Introduceti numele, linkul sau categoria cuvantului-rezultat!"
             return exit_msg;
 
     }
@@ -119,7 +119,7 @@ async function AddNewResult(body) {
 
                 await Keyword.create({
 
-                    //Daca cuvantul cheie nu exista se adauga in baza de date si se  extrasge ID-ul aferent 
+                    //Daca cuvantul cheie nu exista se adauga in baza de date si se extrasge ID-ul aferent 
                     Name: body.Category,
                 }).then(result => Keyword_id = result.ID);
 
@@ -144,7 +144,7 @@ async function AddNewResult(body) {
             if (err.name == "SequelizeUniqueConstraintError") {
 
                 exit_msg[0] = 400;
-                exit_msg[1] = "Nu se pot introduce in baza de date doua text cautate cu acelasi nume si/sau avand acelasi link!"
+                exit_msg[1] = "Nu se pot introduce in baza de date doua texte cautate cu acelasi nume si/sau avand acelasi link!"
                 return exit_msg;
 
             }
@@ -170,7 +170,7 @@ async function UpdateSearchResult(searchResultID, body) {
     if (Object.keys(body).length == 0) {
 
         exit_msg[0] = 400;
-        exit_msg[1] = "Lipseste corpul mesajului! Nu exista informatii necesare inregistrarii in baza de date"
+        exit_msg[1] = "Lipseste corpul mesajului! Nu exista informatii necesare inregistrarii in baza de date!"
 
     } else if (!body.Category || body.Category.trim().length == 0 || !body.Name || body.Name.trim().length == 0 
     || !body.Link || body.Link.trim().length == 0) 
@@ -195,7 +195,7 @@ async function UpdateSearchResult(searchResultID, body) {
             if (SearchResultRow.length == 0) {
 
                 exit_msg[0] = 400;
-                exit_msg[1] = "ID-ul nu este inregistrat in baza de date";
+                exit_msg[1] = "ID-ul nu este inregistrat in baza de date!";
 
             } else {
 
