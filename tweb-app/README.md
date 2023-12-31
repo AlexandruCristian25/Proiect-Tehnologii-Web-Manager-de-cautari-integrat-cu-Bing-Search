@@ -25,3 +25,10 @@ Proiectul va fi impartit in doua parti; partea de Frontend va contine designul a
 - o casuta de cautare in care se va adauga un placeholder pentr a-l ajuta pe utilizator ce va avea de facut;
 - un buton care va avea rolul de trimitere a informatiilor introduse pentru fi regasite in baza de date cand vor fi aceesate de mai mute ori;
 - un buton de resetare care va avea rolul de resetare a formularului dupa cum putem observa din denumirea lui;
+
+**REST**
+- Se va instala pachetul de "Node Modules" folosind comanda "npm install";
+- Din terminal in directorul de "database" se va scrie comanda "node ./api.js" care vs porni serverul si baza de date configurate pe portul 8080;
+- In HeidiSQL cu configuratia "Network type: MariaDB or MySQL (TCP/IP)", "Library: libmariadb.dll", "Hostname/IP: localhost", "Username: root", "Password: root", "Port 3306" se va accesa baza de date;
+- In fisierul "operation-api.js" din directorul "database" se vor putea observa operatiile de tip CRUD cu exemplele aferente ce vor putea fi vazute in Postman, cu caile de acces aferente fiecare operatii.
+- Dupa executarea acestor operatii se vor observa in baza de date schimbarile produse prin accesarea butonului de "refresh" care va reinprospata baza de date.
