@@ -10,10 +10,9 @@ Proiectul va fi conceput in React accesand comanda 'npx create-react-app', iar p
 4. Instalarea Sequelize ORM de aici https://sequelize.org/
 
 !!! Important: 
-1. Portul pe care serverul de nodeJS(backend-ul) este configurat este 3000 iar partea de frontend va fi configurata pe portul 8080.
+1. Portul pe care serverul de nodeJS(frontend-ul) este configurat este 3000 iar partea de backend va fi configurata pe portul 8080.
 2. Se executa comanda git clone github.com:AlexandruCristian25/Proiect-Tehnologii-Web-Manager-de-cautari-integrat-cu-Bing-Search/tweb-app.
 3. Pentru instalea pachetelor aferente aplicatiei se va utiliza comanda 'npm install'.
-4. Atat frontend-ul (localhost:8080 in browser) cat si backend-ul (localhost:3000) trebuie sa fie pornite prin comanda 'npm start'.
 
 # Specificatii proiect
 
@@ -28,7 +27,14 @@ Proiectul va fi impartit in doua parti; partea de Frontend va contine designul a
 
 **REST**
 - Se va instala pachetul de "Node Modules" folosind comanda "npm install";
-- Din terminal in directorul de "database" se va scrie comanda "node ./api.js" care vs porni serverul si baza de date configurate pe portul 8080;
+- Din terminal in directorul "database" se va scrie comanda "node ./api.js" care va porni serverul si baza de date configurate pe portul 8080;
 - In HeidiSQL cu configuratia "Network type: MariaDB or MySQL (TCP/IP)", "Library: libmariadb.dll", "Hostname/IP: localhost", "Username: root", "Password: root", "Port: 3306" se va accesa baza de date;
 - In fisierul "operation-api.js" din directorul "database" se vor putea observa operatiile de tip CRUD cu exemplele aferente ce vor putea fi vazute in Postman, cu caile de acces aferente fiecare operatii.
 - Dupa executarea acestor operatii se vor observa in baza de date schimbarile produse prin accesarea butonului de "refresh" care va reinprospata baza de date.
+
+**FRONTEND**
+- Se va instala pachetul de "Node Modules" folosind comanda "npm install" in directorul de "web_search";
+- Din terminal in directorul "web_search" se va scrie comanda "npm start" care va porni aplicatia;
+- Interfata va avea componente doua butoane, unul purtand numele de "Administrare rezultate cautare" iar cel de-a doilea are numele de "Search", cat si un formular care ne va returna rezultatele cautate sub forma unui tabel;
+- Butonul "Administrare rezultate cautare" ne va trimite catre pagina principala unde va va afla tabelul cu toate rezultatele existente in baza de date cat si un buton care ne va permite adaugarea unei noi categorii;
+- Butonul "Search" ne va trimite catre formularul de cautare;
